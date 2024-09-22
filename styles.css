@@ -44,6 +44,35 @@
 } */
 
 .header {    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 12fr 1fr 1fr 4fr;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lower-header .greeting {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greeting img{
+    grid-row: 1 / 3;
+}
+
+.lower-header .buttons {
+    grid-column: 2;
+    /* grid-row: 1; */
+    /* display: flex; */
 }
 
 .main {
