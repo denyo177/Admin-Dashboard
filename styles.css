@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -60,11 +60,46 @@
 .header {    
     display: grid;
     grid-template-rows: 1fr 1fr;
+    /* align-items: center; */
+}
+
+.upper-header #my_avatar {
+    height: 40px;
+    width: 40px;
 }
 
 .upper-header {
     display: grid;
-    grid-template-columns: 12fr 1fr 1fr 4fr;
+    grid-template-columns: 1fr 12fr 1fr 1fr 3fr;
+    align-items: center;
+    /* justify-items: center; */
+    /* margin-right: 20px; */
+    padding: 15px 25px;
+
+}
+
+.upper-header img {
+    height: 20px;
+    width: 20px;
+    justify-self: center;
+}
+
+.upper-header input {
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: #e2e8f0;
+    border: none;
+    width: 80%;
+    height: 25px;
+    padding: 8px 10px;
+
+    
+}
+
+
+.upper-header .admin-name {
+    justify-self: center;
+    font-weight: 700;
 }
 
 .lower-header {
@@ -90,7 +125,7 @@
 }
 
 .main {
-    background-color: lightgray;
+    background-color: #e2e8f0;
     grid-column: 2;
     display: grid;
     grid-template-columns: 3fr 1fr;
