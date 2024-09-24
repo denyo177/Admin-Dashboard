@@ -92,10 +92,7 @@
     width: 80%;
     height: 25px;
     padding: 8px 10px;
-
-    
 }
-
 
 .upper-header .admin-name {
     justify-self: center;
@@ -105,6 +102,8 @@
 .lower-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0px 35px 15px;
 }
 
 .lower-header .greeting {
@@ -112,16 +111,33 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 12px;
 }
 
 .greeting img{
     grid-row: 1 / 3;
+    width: 60px;
+    height: 60px;
+}
+
+#Hi {
+    align-self: center;
+    font-size: 12px;
+}
+
+.lower-header button {
+    border: none;
+    background-color: #0284c7;
+    color: white;
+    font-size: 12px;
+    border-radius: 16px;
+    width: 80px;
+    height: 30px;
+    margin-left: 16px ;
 }
 
 .lower-header .buttons {
-    /* grid-column: 2; */
-    /* grid-row: 1; */
-    /* display: flex; */
+    justify-self: end;
 }
 
 .main {
